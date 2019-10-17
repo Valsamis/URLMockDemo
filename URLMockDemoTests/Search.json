@@ -1,0 +1,23 @@
+{
+    "resultCount" : 1,
+    "results" : [
+        {
+            "artistId" : 1093102,
+            "artistName" : "The Prodigy",
+            "artistViewUrl" : "https://music.apple.com/...",
+            "artworkUrl100" : "https://is4-ssl.mzstatic.com/image/...jpg",
+            "artworkUrl30" : "https://is4-ssl.mzstatic.com/image/...jpg",
+            "artworkUrl60" : "https://is4-ssl.mzstatic.com/image/thumb/..jpg",
+            "collectionCensoredName" : "The Fat of the Land",
+            "country" : "USA",
+            "currency" : "USD",
+            "kind" : "song",
+            "previewUrl" : "https://audio-ssl.itunes.apple.com/...m4a",
+            "primaryGenreName" : "Electronic",
+            "releaseDate" : "1996-11-11T12:00:00Z",
+            "trackCount" : 10,
+            "trackId" : 500162140,
+            "trackName" : "Breathe"
+        }
+    ]
+}

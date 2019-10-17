@@ -12,7 +12,22 @@
 		BAF2545F23507B72005B6317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF2545D23507B72005B6317 /* Main.storyboard */; };
 		BAF2546123507B74005B6317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF2546023507B74005B6317 /* Assets.xcassets */; };
 		BAF2546423507B74005B6317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF2546223507B74005B6317 /* LaunchScreen.storyboard */; };
+		BAF2547223507BD3005B6317 /* URLMockDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2547123507BD3005B6317 /* URLMockDemoTests.swift */; };
+		BAF2547A23507BF3005B6317 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2547923507BF3005B6317 /* NetworkClient.swift */; };
+		BAF2547C23507C1E005B6317 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2547B23507C1E005B6317 /* Track.swift */; };
+		BAF25480235097CE005B6317 /* NetworkClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2547F235097CE005B6317 /* NetworkClient+Mock.swift */; };
+		BAF2548223509B52005B6317 /* Search.json in Resources */ = {isa = PBXBuildFile; fileRef = BAF2548123509B52005B6317 /* Search.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAF2547423507BD3005B6317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF2544E23507B72005B6317 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF2545523507B72005B6317;
+			remoteInfo = URLMockDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BAF2545623507B72005B6317 /* URLMockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLMockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +37,24 @@
 		BAF2546023507B74005B6317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAF2546323507B74005B6317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAF2546523507B74005B6317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF2546F23507BD3005B6317 /* URLMockDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLMockDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF2547123507BD3005B6317 /* URLMockDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLMockDemoTests.swift; sourceTree = "<group>"; };
+		BAF2547323507BD3005B6317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF2547923507BF3005B6317 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		BAF2547B23507C1E005B6317 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		BAF2547F235097CE005B6317 /* NetworkClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkClient+Mock.swift"; sourceTree = "<group>"; };
+		BAF2548123509B52005B6317 /* Search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Search.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BAF2545323507B72005B6317 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF2546C23507BD3005B6317 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				BAF2545823507B72005B6317 /* URLMockDemo */,
+				BAF2547023507BD3005B6317 /* URLMockDemoTests */,
 				BAF2545723507B72005B6317 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				BAF2545623507B72005B6317 /* URLMockDemo.app */,
+				BAF2546F23507BD3005B6317 /* URLMockDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +85,43 @@
 		BAF2545823507B72005B6317 /* URLMockDemo */ = {
 			isa = PBXGroup;
 			children = (
-				BAF2545923507B72005B6317 /* AppDelegate.swift */,
+				BAF2547D235081DF005B6317 /* Models */,
+				BAF2547E235081E8005B6317 /* Networking */,
 				BAF2545B23507B72005B6317 /* ViewController.swift */,
+				BAF2545923507B72005B6317 /* AppDelegate.swift */,
 				BAF2545D23507B72005B6317 /* Main.storyboard */,
 				BAF2546023507B74005B6317 /* Assets.xcassets */,
 				BAF2546223507B74005B6317 /* LaunchScreen.storyboard */,
 				BAF2546523507B74005B6317 /* Info.plist */,
 			);
 			path = URLMockDemo;
+			sourceTree = "<group>";
+		};
+		BAF2547023507BD3005B6317 /* URLMockDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2548123509B52005B6317 /* Search.json */,
+				BAF2547123507BD3005B6317 /* URLMockDemoTests.swift */,
+				BAF2547323507BD3005B6317 /* Info.plist */,
+			);
+			path = URLMockDemoTests;
+			sourceTree = "<group>";
+		};
+		BAF2547D235081DF005B6317 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2547B23507C1E005B6317 /* Track.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAF2547E235081E8005B6317 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2547923507BF3005B6317 /* NetworkClient.swift */,
+				BAF2547F235097CE005B6317 /* NetworkClient+Mock.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +144,24 @@
 			productReference = BAF2545623507B72005B6317 /* URLMockDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BAF2546E23507BD3005B6317 /* URLMockDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF2547623507BD3005B6317 /* Build configuration list for PBXNativeTarget "URLMockDemoTests" */;
+			buildPhases = (
+				BAF2546B23507BD3005B6317 /* Sources */,
+				BAF2546C23507BD3005B6317 /* Frameworks */,
+				BAF2546D23507BD3005B6317 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF2547523507BD3005B6317 /* PBXTargetDependency */,
+			);
+			name = URLMockDemoTests;
+			productName = URLMockDemoTests;
+			productReference = BAF2546F23507BD3005B6317 /* URLMockDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +174,10 @@
 				TargetAttributes = {
 					BAF2545523507B72005B6317 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					BAF2546E23507BD3005B6317 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BAF2545523507B72005B6317;
 					};
 				};
 			};
@@ -113,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				BAF2545523507B72005B6317 /* URLMockDemo */,
+				BAF2546E23507BD3005B6317 /* URLMockDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +211,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAF2546D23507BD3005B6317 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF2548223509B52005B6317 /* Search.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +227,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF2545C23507B72005B6317 /* ViewController.swift in Sources */,
+				BAF25480235097CE005B6317 /* NetworkClient+Mock.swift in Sources */,
 				BAF2545A23507B72005B6317 /* AppDelegate.swift in Sources */,
+				BAF2547A23507BF3005B6317 /* NetworkClient.swift in Sources */,
+				BAF2547C23507C1E005B6317 /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF2546B23507BD3005B6317 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF2547223507BD3005B6317 /* URLMockDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAF2547523507BD3005B6317 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF2545523507B72005B6317 /* URLMockDemo */;
+			targetProxy = BAF2547423507BD3005B6317 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BAF2545D23507B72005B6317 /* Main.storyboard */ = {
@@ -312,6 +422,44 @@
 			};
 			name = Release;
 		};
+		BAF2547723507BD3005B6317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = URLMockDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viel.URLMockDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URLMockDemo.app/URLMockDemo";
+			};
+			name = Debug;
+		};
+		BAF2547823507BD3005B6317 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = URLMockDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.viel.URLMockDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/URLMockDemo.app/URLMockDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +477,15 @@
 			buildConfigurations = (
 				BAF2546923507B74005B6317 /* Debug */,
 				BAF2546A23507B74005B6317 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF2547623507BD3005B6317 /* Build configuration list for PBXNativeTarget "URLMockDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF2547723507BD3005B6317 /* Debug */,
+				BAF2547823507BD3005B6317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

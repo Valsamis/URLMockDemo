@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let url = URL(string: "https://itunes.apple.com/search?term=prodigy&limit=1")!
+        let networkClient = NetworkClient()
+
+        networkClient.searchItunes(url: url) { trackStore, errorMessage  in
+
+            print(trackStore ?? "")
+            print(trackStore?.results.first ?? "")
+            print(errorMessage ?? "")
+        }
     }
-
-
 }
-
